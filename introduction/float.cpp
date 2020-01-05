@@ -13,5 +13,3 @@ int main()
     std::cout << i << std::endl;
   }
 }
-
-// x += 0.1  x <= 0.4
