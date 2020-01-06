@@ -1,3 +1,4 @@
+# À exécuter, par ex., sur https://kvakil.github.io/venus/
 	mv      a5, a0
 	beqz	a0, .L7
 	li      a0, 0
