@@ -2,9 +2,9 @@
 
 void foo()
 {
-  std::cout << "foo()" << std::endl;
-
-  while (true) { }
+  while (true) {
+    std::cout << "foo()" << std::endl;
+  }
 }
 
 int main()
