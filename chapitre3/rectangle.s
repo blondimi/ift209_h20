@@ -2,7 +2,7 @@
 
 // Calcule l'aire et le périmètre d'un rectangle
 //
-// EntrÃ©e: lit quatre entiers non négatifs de 64 bits: x1, y1, x2, y2
+// Entrée: lit quatre entiers non négatifs de 64 bits: x1, y1, x2, y2
 // Sortie: aire et périmètre d'un rectangle dont deux coins opposés
 //         sont donnés par (x1, y1) et (x2, y2)
 // Usage des registres:
