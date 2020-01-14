@@ -1,4 +1,4 @@
-;; Adaptation de collatz.s pour x86-64
+;; Adaptation de collatz.s pour x86-64 (sous syntaxe Intel plutôt que AT&T)
 ;;
 ;; Pour assembler et exécuter sur Ubuntu:
 ;;
