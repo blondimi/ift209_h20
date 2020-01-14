@@ -1,6 +1,6 @@
 // Pour assembler et exécuter sur Ubuntu:
 //
-// as collatz.s -o collatz.o && ld foo.o -o collatz -e main -lc && ./collatz
+// as collatz.s -o collatz.o && ld collatz.o -o collatz -e main -lc && ./collatz
 //
 .global main
   
