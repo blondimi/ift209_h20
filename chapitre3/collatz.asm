@@ -31,7 +31,7 @@ pair:
         mov	rdx, 0          ;
         mov	rax, r12        ; a ← n
         mov	r14, 2          ; d ← 2
-        div	r14             ; a ← a ÷ 2
+        div	r14             ; a ← a ÷ d
         mov	r12, rax        ; n ← a        
         jmp	fin             ; aller à fin
 impair:
