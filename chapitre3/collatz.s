@@ -39,6 +39,7 @@ finboucle:
         mov     x1, x21         // x1 ← x21
         bl      printf          // printf(x0, x1)
 
+        mov     x0, 0           //
         bl      exit            // Quitter le programme
 
 .section ".bss"
