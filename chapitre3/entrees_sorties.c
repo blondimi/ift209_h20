@@ -16,10 +16,10 @@ int main()
   long b;                // b:  .skip  8
                          //
                          // .section ".text"
-  printf(CHAINE1);       // adr x0, CHAINE1   bl printf
-  scanf(FORMAT1, &a);    // adr x0, FORMAT1   adr x1, a   bl scanf
-  scanf(FORMAT2, &b);    // adr x0, FORMAT2   adr x1, b   bl scanf
-  printf(CHAINE2, a);    // adr x0, CHAINE2   mov x1, a   bl printf
-  printf(CHAINE3, b);    // adr x0, CHAINE3   mov x1, b   bl printf
-  printf(CHAINE4, a, b); // adr x0, CHAINE4   mov x1, a   mov x2, b   bl printf
+  printf(CHAINE1);       // adr x0, CHAINE1  bl printf
+  scanf(FORMAT1, &a);    // adr x0, FORMAT1  adr x1, a   bl scanf
+  scanf(FORMAT2, &b);    // adr x0, FORMAT2  adr x1, b   bl scanf
+  printf(CHAINE2, a);    // adr x0, CHAINE2  ldr x19, a  mov x1, x19  bl printf
+  printf(CHAINE3, b);    // adr x0, CHAINE3  ldr x19, b  mov x1, x19  bl printf
+  printf(CHAINE4, a, b); // adr x0, CHAINE4  ldr x19, a  mov x1, x19  ldr x19, b  mov x2, x20  bl printf
 }
