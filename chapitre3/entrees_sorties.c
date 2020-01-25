@@ -21,5 +21,5 @@ int main()
   scanf(FORMAT2, &b);    // adr x0, FORMAT2  adr x1, b   bl scanf
   printf(CHAINE2, a);    // adr x0, CHAINE2  ldr x19, a  mov x1, x19  bl printf
   printf(CHAINE3, b);    // adr x0, CHAINE3  ldr x19, b  mov x1, x19  bl printf
-  printf(CHAINE4, a, b); // adr x0, CHAINE4  ldr x19, a  mov x1, x19  ldr x19, b  mov x2, x20  bl printf
+  printf(CHAINE4, a, b); // adr x0, CHAINE4  ldr x19, a  mov x1, x19  ldr x19, b  mov x2, x19  bl printf
 }
