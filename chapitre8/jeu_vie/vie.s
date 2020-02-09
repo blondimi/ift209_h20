@@ -115,7 +115,9 @@ cellule_morte:                  //
     b       afficher_cellule    //     }
 cellule_vivante:                //     else {
     mov     x1, 1               //       etat = 1
-afficher_cellule:               //     }
+                                //     }
+    // Afficher nouvel état     //
+afficher_cellule:               //
     adr     x0, fmtSortie       //
     bl      printf              //     printf("%lu ", etat)
                                 //
