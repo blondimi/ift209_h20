@@ -3,7 +3,7 @@
 // Exemple de l'utilisation d'un tableau de pointeurs de fonctions
 //
 // Entrée: lit un entier non négatif i
-// Sortie: affiche tab[i](5, 7) où tab = {somme, produit, différence}
+// Sortie: affiche tab[i](7, 5) où tab = {somme, produit, différence}
 // Usage des registres:
 //   x19 -- adresse de tab          x27 -- 7 (figé dans le code)
 //   x20 -- valeur temporaire       x28 -- 5 (figé dans le code)
@@ -13,9 +13,9 @@ main:                                   // main()
     // Initialiser tab                  // {
     adr     x19, tab                    //
     adr     x20, somme                  //
-    str     w20, [x19], 4               //
+    str     x20, [x19], 8               //
     adr     x20, produit                //
-    str     w20, [x19], 4               //
+    str     x20, [x19], 8               //
     adr     x20, diff                   //
     str     w20, [x19]                  //   tab = {&somme, &produit, &diff}
                                         //
@@ -26,10 +26,10 @@ main:                                   // main()
     ldr     x21, temp                   //   i = temp
                                         //
     // Évaluer f(7, 5) où f := tab[i]   //
-    mov     x20, 4                      //
+    mov     x20, 8                      //
     mul     x22, x20, x21               //
     adr     x19, tab                    //
-    ldr     w20, [x19, x22]             //   f = tab[i]  (où index = &tab + 4*i)
+    ldr     w20, [x19, x22]             //   f = tab[i]  (où index = &tab + 8*i)
     mov     x27, 7                      //   x = 7
     mov     x28, 5                      //   y = 5
     br      x20                         //   f(x, y)
@@ -53,8 +53,8 @@ afficher:                               //
     bl      exit                        // }
                                         //
 .section ".bss"                         //
-tab:    .skip   3*4                     // tab[] = tableau de 4 demi-mots
-temp:   .skip   4                       // temp  = variable d'un demi-mot
+tab:    .skip   3*8                     // tab[] = tableau de 4 double mots
+temp:   .skip   4                       // temp  = variable d'un mot
                                         //
 .section ".rodata"                      //
 fmtEntree:  .asciz  "%u"                //
