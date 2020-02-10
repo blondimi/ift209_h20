@@ -17,7 +17,7 @@ main:                                   // main()
     adr     x20, produit                //
     str     x20, [x19], 8               //
     adr     x20, diff                   //
-    str     w20, [x19]                  //   tab = {&somme, &produit, &diff}
+    str     x20, [x19]                  //   tab = {&somme, &produit, &diff}
                                         //
     // Lire chiffre                     //
     adr     x0, fmtEntree               //
@@ -29,7 +29,7 @@ main:                                   // main()
     mov     x20, 8                      //
     mul     x22, x20, x21               //
     adr     x19, tab                    //
-    ldr     w20, [x19, x22]             //   f = tab[i]  (où index = &tab + 8*i)
+    ldr     x20, [x19, x22]             //   f = tab[i]  (où index = &tab + 8*i)
     mov     x27, 7                      //   x = 7
     mov     x28, 5                      //   y = 5
     br      x20                         //   f(x, y)
