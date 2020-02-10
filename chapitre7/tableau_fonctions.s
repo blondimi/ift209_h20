@@ -53,7 +53,7 @@ afficher:                               //
     bl      exit                        // }
                                         //
 .section ".bss"                         //
-tab:    .skip   3*8                     // tab[] = tableau de 4 double mots
+tab:    .skip   3*8                     // tab[] = tableau de 3 double mots
 temp:   .skip   4                       // temp  = variable d'un mot
                                         //
 .section ".rodata"                      //
