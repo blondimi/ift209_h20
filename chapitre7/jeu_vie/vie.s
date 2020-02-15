@@ -26,7 +26,7 @@ lecture_boucle:                 //
     mov     x1, x25             //
     bl      scanf               //   scanf("%lu", adr)
     sub     x24, x24, 1         //   k--
-    add     x25, x25, 8         //   adr -= 8
+    add     x25, x25, 8         //   adr += 8
     b       lecture_boucle      // }
                                 //
     // Générer nouvelle grille  //
