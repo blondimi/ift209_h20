@@ -37,4 +37,4 @@ max_retour:                         //   }
                                     // }
 
 .section ".rodata"
-fmtSortie:      .asciz "%ld\n"
+fmtSortie:      .asciz  "%ld\n"
