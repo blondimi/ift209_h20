@@ -6,6 +6,9 @@ Implémentation ARMv8 du [jeu de la vie de Conway](https://fr.wikipedia.org/wiki
  make && ./simuler.sh fichier
 ```
 
+![Capture d'écran](./.capture.png)
+
+
 Afin de tester avec les grilles fournies, exécutez:
 
 ```
