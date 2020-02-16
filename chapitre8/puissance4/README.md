@@ -5,3 +5,7 @@ Implémentation ARMv8 du jeu [Puissance 4](https://fr.wikipedia.org/wiki/Puissan
 ```
  make && ./puissance4
 ```
+
+
+
+![Capture d'écran](./.capture.png)
