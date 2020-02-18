@@ -1,7 +1,7 @@
 .global main
 
 /*******************************************************************************
-  Programme qui calcule la somme et le produit de deux nombres de 16 bits
+  Programme qui calcule la somme et le produit de deux entiers de 16 bits
 
   Usage des registres:
      w19 - a (1er nombre)      x22 - acc  (accumulateur)
