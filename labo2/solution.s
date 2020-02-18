@@ -36,8 +36,8 @@ addition:                               //
     // un débordement sur 16 bits       //
 debordement:                            //
     cmp     w21, 32768                  //
-    b.ge    debordement_sinon           //   if !(c >= 2¹⁶ ||
-    cmp     w21, -32768                 //        c < -2¹⁶)
+    b.ge    debordement_sinon           //   if !(c >= 2¹⁵ ||
+    cmp     w21, -32768                 //        c < -2¹⁵)
     b.lt    debordement_sinon           //   {
     adr     x0, msgSansDebordement      //     s = &msgSansDebordement
     b       debordement_afficher        //   }
