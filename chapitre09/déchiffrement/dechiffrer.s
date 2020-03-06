@@ -24,7 +24,7 @@ main:                               // main()
     mov     x3, x19                 //
     mov     x4, x20                 //
     bl      dechiffrer              //   dechiffrer(&imgCle1, &imgCle2,
-                                    //             &imgSortie, m, n)
+                                    //              &imgSortie, m, n)
     // Afficher l'image déchiffrée  //
     adr     x0, imgSortie           //
     mov     x1, x19                 //
