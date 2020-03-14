@@ -5,14 +5,14 @@
   Exemple de sous-programme: maximum de deux entiers
 *******************************************************************************/
 main:                               // main()
-        mov     x0, 42              // {
-        mov     x1, 9000            //
-        bl      max                 //
-        mov     x19, x0             //   m = max(42, 9000)
+        mov      x0, 42             // {
+        mov      x1, 9000           //
+        bl       max                //
+        mov      x19, x0            //   m = max(42, 9000)
                                     //
-        adr     x0, fmtSortie       //
-        mov     x1, x19             //
-        bl      printf              //   printf("%ld\n", m)
+        adr      x0, fmtSortie      //
+        mov      x1, x19            //
+        bl       printf             //   printf("%ld\n", m)
                                     //
         mov      x0, 0              //
         bl       exit               //   return 0
