@@ -73,9 +73,8 @@ est_palindrome:                     // est_palindrome(chaine, taille)
     sub     x21, x1, 1              //   j = taille - 1
     mov     x22, 1                  //   r = true
                                     //
-    cmp     x1, 0                   //   if (taille == 0)
-    b.eq    est_palindrome_ret      //     return r
-                                    //
+    cbz     x1, est_palindrome_ret  //   if (taille == 0)
+                                    //     return r
 est_palindrome_boucle:              //
     cmp     x20, x21                //   while (i < j)
     b.hs    est_palindrome_ret      //   {
@@ -88,7 +87,7 @@ est_palindrome_boucle:              //
     b       est_palindrome_ret      //       break
                                     //     }
 est_palindrome_suiv:                //
-    add     x20, x20, 1             //     i--
+    add     x20, x20, 1             //     i++
     sub     x21, x21, 1             //     j--
     b       est_palindrome_boucle   //   }
 est_palindrome_ret:                 //
