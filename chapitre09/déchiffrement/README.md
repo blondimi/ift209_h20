@@ -4,6 +4,8 @@ Implémentation du déchiffrement d'une variante de [cryptographie visuelle](htt
 
 ```
  make && (cat cle1.pbm cle2.pbm | ./dechiffrer) > image.pbm
+
 ```
+Ces deux clés reproduiront cette image:
 
 ![Exemple de déchiffrement](./.exemple.png)
