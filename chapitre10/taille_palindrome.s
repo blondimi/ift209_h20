@@ -24,7 +24,7 @@ main:                               // main()
     adr     x0, chaine              //
     mov     x1, x19                 //
     bl      est_palindrome          //
-    mov     x20, x0                 //   pal = est_palindrome(chaine, n)
+    mov     x20, x0                 //   pal = est_palindrome(&chaine, n)
                                     //
     // Afficher si palindrome       //
     cbz     x20, main_pas_pal       //
