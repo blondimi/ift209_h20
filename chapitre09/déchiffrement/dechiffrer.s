@@ -100,7 +100,7 @@ charger_ret:                        //
   Effet:  déchiffre les deux clés et produit leur déchiffrement
   Usage: x19 - num_pixels     w20 - pixel1     w21 - pixel2     w22 - pixel
 *******************************************************************************/
-dechiffrer:                         // dechiffrer(img1,&img2, img_sortie, m, n)
+dechiffrer:                         // dechiffrer(img1, img2, img_sortie, m, n)
     SAVE                            // {
     add     x19, x4, 7              //
     lsr     x19, x19, 3             //
