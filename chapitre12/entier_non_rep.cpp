@@ -27,8 +27,8 @@ unsigned long exp(unsigned int n)
     return 1;
   }
   else {
-    unsigned long r = exp(n / 2) * exp(n / 2);
+    unsigned long r = exp(n / 2); 
 
-    return (n % 2 == 0) ? r : 2*r;
+    return (n % 2 == 0) ? (r * r) : (r * r * 2);
   }
 }
