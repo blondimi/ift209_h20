@@ -74,7 +74,7 @@ deplacer_chiffre:               ; deplacer_chiffre() {
     sta     posY                ;   posY += b       ; posY++ ssi A est enfoncé
                                 ;
     rts                         ; }
-
+                                ;
 update_chiffre:                 ; update_chiffre()
     ; Position verticale        ; {
     lda     posY                ;

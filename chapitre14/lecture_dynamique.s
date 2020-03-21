@@ -20,7 +20,7 @@
 .endm
 
 /*******************************************************************************
-  Exemple de programme simple pour le NES
+  Exemple de lecture d'une chaîne de taille arbitraire avec appels systèmes
 *******************************************************************************/
 main:                                   // main()
     // Lire une chaîne au clavier       // {
