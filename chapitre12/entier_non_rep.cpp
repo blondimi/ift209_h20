@@ -1,6 +1,6 @@
 #include <cmath>
-#include <iostream>
 #include <iomanip>
+#include <iostream>
 
 unsigned long exp(unsigned int n);
 
