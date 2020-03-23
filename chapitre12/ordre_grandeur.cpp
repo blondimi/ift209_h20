@@ -17,7 +17,7 @@ int main()
 
   double x = std::accumulate(t.begin(), t.end(), 0.0); // x = somme(t)
 
-  std::sort(std::begin(t), std::end(t));               // trier t
+  std::sort(t.begin(), t.end());                       // trier t
 
   double y = std::accumulate(t.begin(), t.end(), 0.0); // y = somme(t)
   
