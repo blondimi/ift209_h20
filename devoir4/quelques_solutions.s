@@ -19,8 +19,8 @@ taille_cas:                         //       do {
     cmp     w23, w22                //
     b.eq    taille_suiv             //         if (c == format) { break }
                                     //
-    orr     w21, w21, w21, lsr 1    //         masque = 10000000₂ | (masque >> 1)
-    orr     w22, w22, w22, lsr 1    //         format = 10000000₂ | (format >> 1)
+    orr     w21, w21, w21, lsr 1    //         masque |= (masque >> 1)
+    orr     w22, w22, w22, lsr 1    //         format |= (format >> 1)
     cmp     x20, 4                  //       }
     b.lo    taille_cas              //       while (k < 4)
 taille_suiv:                        //     }
